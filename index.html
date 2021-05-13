@@ -19,34 +19,34 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="page-header line">
-      <div class="container">
+    <header class="header header__line">
+      <div class="container header__container">
         <nav class="nav">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo nav__logo" href="./index.html">Web<span class="header__logo">Studio</span></a>
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="link nav-active" href="./index.html">Студия</a>
+            <li class="menu__item">
+              <a class="link menu__link menu__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="menu-item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="menu__item">
+              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu-item">
-              <a class="link" href="#contacts">Контакты</a>
+            <li class="menu__item">
+              <a class="link menu__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list contacts">
-          <li class="menu-item">
-            <a class="link contacts-link" href="info@devstudio.com">
-              <svg width="16px" height="12px" class="contacts-icon">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="info@devstudio.com">
+              <svg width="16px" height="12px" class="contacts__icon">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="menu-item">
-            <a class="link contacts-link" href="+380961111111">
-              <svg width="10px" height="16px" class="contacts-icon">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="+380961111111">
+              <svg width="10px" height="16px" class="contacts__icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -56,62 +56,62 @@
       </div>
     </header>
     <section class="dark-bg hero">
-      <div class="container content-hero">
-        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+      <div class="container hero__content">
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </div>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form">   
-            <form>     
-              <div class="form-field">
-                <label class="form-label" for="name">Имя</label>
-                <svg width="18px" height="18px" class="form-icons">
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="modal__box">   
+            <form class="contact-form">     
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="name">Имя</label>
+                <svg width="18px" height="18px" class="contact-form__icons">
                   <use href="./images/icons.svg#icon-icon-name-user-form"></use>
                 </svg>
-                <input class="form-input" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё]+$" required>              
+                <input class="contact-form__input" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё]+$" required>              
               </div>           
 
-              <div class="form-field">
-                <label class="form-label" for="tel">Телефон</label>
-                <svg width="18px" height="18px" class="form-icons">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="tel">Телефон</label>
+                <svg width="18px" height="18px" class="contact-form__icons">
                   <use href="./images/icons.svg#icon-icon-tel-form"></use>
                 </svg>
-                <input class="form-input" type="tel" name="tel" id="tel" pattern="[0-9]{10}" required>
+                <input class="contact-form__input" type="tel" name="tel" id="tel" pattern="[0-9]{10}" required>
               </div>
 
-              <div class="form-field">
-                <label class="form-label" for="email">Почта</label>
-                <svg width="18px" height="18px" class="form-icons">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="email">Почта</label>
+                <svg width="18px" height="18px" class="contact-form__icons">
                   <use href="./images/icons.svg#icon-icon-email-form"></use>
                 </svg>
-                <input class="form-input" type="email" name="email" id="email" required>
+                <input class="contact-form__input" type="email" name="email" id="email" required>
               </div>
             
-              <div class="form-comment">
-                <label class="form-label" for="comment">Комментарий</label>
-                <textarea class="comment" name="comment" id="comment" rows="4" placeholder="Введите текст" required></textarea>
+              <div class="contact-form__comment">
+                <label class="contact-form__label" for="comment">Комментарий</label>
+                <textarea class="contact-form__message" name="comment" id="comment" rows="4" placeholder="Введите текст" required></textarea>
               </div>
             
-              <div class="checkbox-filed">
+              <div class="contact-form__licence">
                 <input 
                 type="checkbox" 
-                name="agreement" 
-                id="agreement" 
-                class="checkbox visually-hidden" 
+                name="licence" 
+                id="licence" 
+                class="contact-form__checkbox visually-hidden" 
                 required>
                 <label 
-                for="agreement"
-                class="checkbox-label">Соглашаюсь с рассылкой и принимаю 
-                <a class="agreement" href="#">Условия договора</a>
+                for="licence"
+                class="contact-form__checkbox-label">Соглашаюсь с рассылкой и принимаю
+                <a class="contact-form__checkbox-link" href="#">Условия договора</a>
                 </label>
               </div>
 
-              <button class="button" type="submit">Отправить</button>
+              <button class="button contact-form__button" type="submit">Отправить</button>
             </form>
             <button class="btn-modal-close" data-modal-close>
-              <svg width="18px" height="18px" class="close-icon">
+              <svg width="18px" height="18px" class="contact-form__close-icon">
                 <use href="./images/icons.svg#icon-modal-close"></use>
               </svg>
             </button>
@@ -438,7 +438,7 @@
             </li>
           </ul>
         </div>
-        <form class="form-mailling">          
+        <form class="contact-form-mailling">          
           <h3 class="title-mailling">Подпишитесь на рассылку</h3> 
           <div class="box-input">
             <label for="mailling"></label>
