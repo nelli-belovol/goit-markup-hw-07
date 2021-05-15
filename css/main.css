@@ -274,7 +274,7 @@ summary {
   --accent-cl: #2196f3;
   --dark-bg-cl: #2f303a;
   --team-button-bg: #f5f4fa;
-  --contacts-link-cl: color rgba(255, 255, 255, 0.6);
+  --footer-link-cl: color rgba(255, 255, 255, 0.6);
   --icon-color: #afb1b8;
   --line-cl: #ececec;
   --overlay-bg: rgba(33, 150, 243, 0.9);
@@ -681,8 +681,10 @@ body {
   margin-right: 8px;
 }
 
-.contact-form__checkbox:focus + .contact-form__checkbox-label::before {
+.contact-form__checkbox:focus + .contact-form__checkbox-label::before,
+.contact-form__checkbox:hover + .contact-form__checkbox-label::before {
   border: 1px solid var(--accent-cl);
+  cursor: pointer;
 }
 
 .contact-form__checkbox-link {

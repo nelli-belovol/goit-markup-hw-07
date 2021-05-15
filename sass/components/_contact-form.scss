@@ -174,8 +174,14 @@
     margin-right: 8px;
   }
   
-  .contact-form__checkbox:focus + .contact-form__checkbox-label::before {
+  .contact-form__checkbox:focus + .contact-form__checkbox-label::before,
+  .contact-form__checkbox:hover + .contact-form__checkbox-label::before {
     border: 1px solid var(--accent-cl);
+    cursor: pointer;
+  }
+
+  .contact-form__checkbox:hover {
+    
   }
   
   .contact-form__checkbox-link {
