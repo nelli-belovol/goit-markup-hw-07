@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="presubscribe" href="https://fonts.gstatic.com" />
+    <link rel="premailling" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
       <div class="container header__container">
         <nav class="nav">
           <a class="logo nav__logo" href="./index.html">Web<span class="nav__logo--black">Studio</span></a>
-          <ul class="nav__menu list">
+          <ul class="nav__menu">
             <li class="nav__item">
               <a class="link nav__link" href="./index.html">Студия</a>
             </li>
@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts__list--flex">
           <li class="contacts__item">
             <a class="contacts__link link" href="info@devstudio.com">
               <svg width="16px" height="12px" class="contacts__icon">
@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="+380961111111">
+            <a class="contacts__link contacts__link link" href="+380961111111">
               <svg width="10px" height="16px" class="contacts__icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -59,7 +59,7 @@
       <section class="portfolio">
         <div class="container portfolio__container">
           <h1 class="visually-hidden">Projects</h1>
-          <ul class="list filter__list">
+          <ul class="filter__list">
             <li class="filter__item">
               <button type="button" class="portfolio__btn portfolio__btn--active">Все</button>
             </li>
@@ -68,7 +68,7 @@
             <li class="filter__item"><button type="button" class="portfolio__btn">Дизайн</button></li>
             <li class="filter__item"><button type="button" class="portfolio__btn">Маркетинг</button></li>
           </ul>
-          <ul class="list portfolio__list">
+          <ul class="portfolio__list">
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__box">
@@ -81,7 +81,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Технокряк</h2>
+                  <h2 class="portfolio__title">Технокряк</h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
@@ -98,7 +98,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
                   <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
@@ -115,7 +115,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Ресторан Seafood</h2>
+                  <h2 class="portfolio__title">Ресторан Seafood</h2>
                   <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
@@ -132,7 +132,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Проект Prime</h2>
+                  <h2 class="portfolio__title">Проект Prime</h2>
                   <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
@@ -149,7 +149,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Проект Boxes</h2>
+                  <h2 class="portfolio__title">Проект Boxes</h2>
                   <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
@@ -166,7 +166,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="portfolio__title" lang="en">Inspiration has no Borders</h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
@@ -183,7 +183,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Издание Limited Edition</h2>
+                  <h2 class="portfolio__title">Издание Limited Edition</h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
@@ -200,7 +200,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name">Проект LAB</h2>
+                  <h2 class="portfolio__title">Проект LAB</h2>
                   <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
@@ -217,7 +217,7 @@
                   </div>
                 </div>
                 <div class="portfolio__info">
-                  <h2 class="portfolio__item-name" lang="en">Growing Business</h2>
+                  <h2 class="portfolio__title" lang="en">Growing Business</h2>
                   <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
@@ -232,63 +232,58 @@
           <a class="logo footer__logo" href="./index.html">Web<span class="footer__logo--white">Studio</span></a>
           <address class="address">
             <p class="address__mail">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-contacts list">
-              <li class="footer-contacts__item">
-                <a class="contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="footer-contacts__item">
-                <a class="contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
+            <ul class="contacts__list">
+              <li class="contacts__item--column"><a class="contacts__link--column link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="contacts__item--column"><a class="contacts__link--column link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
         <div class="follow">
           <h3 class="follow__title">присоединяйтесь</h3>
-          <ul class="list sites">
-            <li class="sites__item">
-              <a class="link sites__link" href="https://instagram.com">
-                <svg width="20px" height="20px" class="sites__icon">
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a class="link social__link social-link--grey" href="https://instagram.com">
+                <svg width="20px" height="20px" class="social__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="sites__item">
-              <a class="link sites__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg width="20px" height="20px" class="sites__icon">
+            <li class="social__item">
+              <a class="link social__link social-link--grey" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="20px" height="20px" class="social__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="sites__item">
-              <a class="link sites__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg width="20px" height="20px" class="sites__icon">
+            <li class="social__item">
+              <a class="link social__link social-link--grey" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="20px" height="20px" class="social__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="sites__item">
-              <a class="link sites__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg width="20px" height="20px" class="sites__icon">
+            <li class="social__item">
+              <a class="link social__link social-link--grey" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="20px" height="20px" class="social__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="subscribe">
-          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
-          <div class="subscribe__box">
-            <label for="subscribe__label"></label>
-            <input id="mailling" name="email-mailling" type="email" class="subscribe__input" placeholder="E-mail" />
-            <button class="button subscribe__btn" type="submit">
-              Подписаться
-              <svg width="24px" height="24px" class="mailling-icon">
+        <form class="mailling">          
+          <h3 class="mailling__title">Подпишитесь на рассылку</h3> 
+          <div class="mailling__box">
+            <label for="mailling__label"></label>
+            <input id="mailling" name="email-mailling" type="email" class="mailling__input"  placeholder="E-mail">
+            <button class="button mailling__btn" type="submit">Подписаться
+              <svg  width="24px" height="24px" class="mailling-icon">
                 <use href="./images/icons.svg#icon-icon-telegram"></use>
-              </svg>
+              </svg> 
             </button>
-          </div>
-        </form>
-      </div>
-    </footer>
+          </div>          
+        </form> 
+      </div>   
+    </footer> 
   </body>
 </html>

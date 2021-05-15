@@ -1,3 +1,272 @@
+@charset "UTF-8";
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 :root {
   --main-cl: #ffffff;
   --main-txt-cl: #757575;
@@ -5,7 +274,7 @@
   --accent-cl: #2196f3;
   --dark-bg-cl: #2f303a;
   --team-button-bg: #f5f4fa;
-  --footer-link-cl: color rgba(255, 255, 255, 0.6);
+  --contacts-link-cl: color rgba(255, 255, 255, 0.6);
   --icon-color: #afb1b8;
   --line-cl: #ececec;
   --overlay-bg: rgba(33, 150, 243, 0.9);
@@ -13,18 +282,9 @@
   --border-form: rgba(33, 33, 33, 0.2);
   --placeholder-color: rgba(117, 117, 117, 0.5);
   --header__logo-color: black;
-
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
 }
-/*
-text nav color, title text body: #212121;
-text contacts nav color, text body : #757575;
-text dark block, button dark block, hover button txt, address: color: #FFFFFF;
-accent color: #2196F3;
-background dark color: #2F303A;
-team-block color, background button: #F5F4FA;
-*/
 
 html {
   box-sizing: border-box;
@@ -47,18 +307,6 @@ P {
   margin-bottom: 0;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-h3 {
-  margin-bottom: 10px;
-}
-
 h2,
 h3 {
   color: var(--title-cl);
@@ -70,7 +318,7 @@ img {
 }
 
 /*убираем маркировку списка*/
-.list {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -117,19 +365,36 @@ body {
   margin-right: auto;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  justify-content: space-between;
+.contacts__item:not(:first-child) {
+  margin-left: 30px;
 }
 
-.header::after {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: var(--line-cl);
+.contacts__list--flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--main-txt-cl);
+}
+
+.contacts__item--column:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts__link--column {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-cl);
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .nav {
@@ -146,28 +411,6 @@ body {
   margin-right: 50px;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: row;
-}
-
-.contacts__item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contacts__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 .nav__logo {
   margin-right: 93px;
 }
@@ -177,7 +420,6 @@ body {
   color: var(--accent-cl);
   flex-direction: column;
   justify-content: space-between;
-
   position: relative;
 }
 
@@ -189,11 +431,7 @@ body {
   background: var(--accent-cl);
   border-radius: 2px;
   position: absolute;
-  top: 50px;
-}
-
-.contacts__link {
-  color: var(--main-txt-cl);
+  top: 46px;
 }
 
 .logo {
@@ -211,33 +449,12 @@ body {
   color: var(--header__logo-color);
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--dark-bg-cl);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 1600px 600px;
-}
-
-.hero__content {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.footer__logo--white {
   color: var(--main-cl);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
 }
 
 .button {
@@ -255,17 +472,43 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   padding: 10px 32px;
-
   margin-left: auto;
   margin-right: auto;
-
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__btn {
+  background-color: var(--team-button-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-cl);
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__btn--active {
+  color: var(--main-cl);
+  background-color: var(--accent-cl);
+}
+
+.portfolio__btn:hover,
+.portfolio__btn:focus,
+.portfolio__btn--active:hover,
+.portfolio__btn--active:focus {
+  background-color: var(--accent-cl);
+  color: var(--main-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -296,18 +539,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
   width: 528px;
   height: 581px;
   background-color: var(--main-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__title {
   display: block;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -346,9 +588,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--placeholder-color);
-
   padding-top: 12px;
   padding-left: 16px;
 }
@@ -357,9 +597,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--main-txt-cl);
-
   padding-top: 12px;
   padding-left: 16px;
 }
@@ -379,8 +617,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    -webkit-text-fill-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-text-fill-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form__input:-webkit-autofill,
@@ -481,6 +718,170 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--main-cl);
+  color: var(--icon-color);
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--accent-cl);
+  color: var(--main-cl);
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.social-link--grey {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-cl);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--accent-cl);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--line-cl);
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+}
+
+.advantages__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.services__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__title {
+  color: var(--title-cl);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.mailling__title {
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+  margin-bottom: 20px;
+}
+
+.follow__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+  margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-bg-cl);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1600px 600px;
+}
+
+.hero__content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -509,36 +910,29 @@ body {
   margin-right: 30px;
 }
 
-.advantages__title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.we-do {
+.services {
   padding-top: 94px;
   padding-bottom: 94px;
   padding-top: 0;
 }
 
-.we-do__list {
+.services__list {
   display: flex;
 }
 
-.we-do__item:not(:last-child) {
+.services__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.we-do__item {
+.services__item {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.we-do__thumb {
+.services__thumb {
   position: relative;
 }
 
-.we-do__img-label {
+.services__label {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -569,6 +963,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .team__item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: center;
@@ -577,47 +972,16 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-cl);
 }
+
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
 .team__position {
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-txt-cl);
   margin-bottom: 16px;
-}
-
-.sites__item {
-  width: 44px;
-  height: 44px;
-}
-
-.sites__link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--main-cl);
-  color: var(--icon-color);
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sites__link:hover,
-.sites__link:focus {
-  background-color: var(--accent-cl);
-  color: var(--main-cl);
-}
-
-.sites__icon {
-  fill: currentColor;
 }
 
 .clients {
@@ -678,36 +1042,6 @@ body {
   margin-right: 8px;
 }
 
-.portfolio__btn {
-  background-color: var(--team-button-bg);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-cl);
-  cursor: pointer;
-  border-radius: 4px;
-  border-color: transparent;
-  padding: 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__btn--active {
-  color: var(--main-cl);
-  background-color: var(--accent-cl);
-}
-
-.portfolio__btn:hover,
-.portfolio__btn:focus,
-.portfolio__btn--active:hover,
-.portfolio__btn--active:focus {
-  background-color: var(--accent-cl);
-  color: var(--main-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -733,8 +1067,7 @@ body {
 .portfolio__btn--active {
   background-color: var(--accent-cl);
   color: var(--main-cl);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__link {
@@ -783,24 +1116,12 @@ body {
   padding: 20px 24px;
 }
 
-.portfolio__item-name {
-  color: var(--title-cl);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-  text-align: left;
-}
-
 .portfolio__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
-
-/* футер*/
 
 .footer {
   display: flex;
@@ -815,7 +1136,7 @@ body {
 
 .address {
   font-style: inherit;
-  color: var(--footer-link-cl);
+  color: var(--contacts-link-cl);
 }
 
 .footer__container {
@@ -824,19 +1145,7 @@ body {
   justify-content: space-between;
 }
 
-.footer__logo--white {
-  color: var(--main-cl);
-}
-
-.footer__logo {
-  margin-bottom: 20px;
-}
-
 .address__mail {
-  margin-bottom: 9px;
-}
-
-.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -844,63 +1153,20 @@ body {
   margin-left: 70px;
 }
 
-.follow__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-cl);
-  margin-bottom: 20px;
-}
-
-.footer__sites-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--main-cl);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sites__link:hover,
-.sites__link:focus {
-  background-color: var(--accent-cl);
-}
-
-.sites {
-  display: flex;
-  justify-content: center;
-}
-
-.sites__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.subscribe__title {
-  display: inline-block;
-  width: 100%;
-  text-align: left;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-cl);
-  margin-bottom: 20px;
-}
-
-.subscribe__box {
+.mailling__box {
   display: flex;
   justify-content: flex-end;
   width: 570px;
 }
 
-.subscribe__input {
+.mailling__input {
   display: inline-block;
   width: 358px;
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
-  color: var(--footer-link-cl);
+  color: var(--contacts-link-cl);
   background-color: var(--dark-bg-cl);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -909,18 +1175,18 @@ body {
   padding-left: 16px;
 }
 
-.subscribe__input:-webkit-autofill,
-.subscribe__input:-webkit-autofill:hover,
-.subscribe__input:-webkit-autofill:focus {
+.mailling__input:-webkit-autofill,
+.mailling__input:-webkit-autofill:hover,
+.mailling__input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--main-cl);
   -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg-cl) inset;
 }
 
-.subscribe__input:not(:placeholder-shown) {
+.mailling__input:not(:placeholder-shown) {
   color: var(--main-cl);
 }
 
-.subscribe__btn {
+.mailling__btn {
   display: flex;
   align-items: center;
   min-width: 200px;
@@ -940,3 +1206,4 @@ body {
   fill: var(--main-cl);
   margin-left: 10px;
 }
+/*# sourceMappingURL=main.css.map */
